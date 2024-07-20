@@ -70,18 +70,18 @@ bingoAda();
 //Questão 05
 
 var alunos = [
-  { nome: 'Pedro Andrade', turma: 'Ada', idade: 22 },
-  { nome: 'Alessandro Ferreira', turma: 'Ada', idade: 32 },
-  { nome: 'Ivirson Daltro', turma: 'Santander', idade: 33 },
-  { nome: 'Tiago Tomé', turma: 'Ada', idade: 23 },
-  { nome: 'Leidy Olinto', turma: 'Santander', idade: 33 },
-  { nome: 'PatrickLima', turma: 'Santander', idade: 28 }
+    { nome: 'Pedro', turma: 'A', idade: 14 },
+    { nome: 'Maria', turma: 'A', idade: 12 },
+    { nome: 'Marcos', turma: 'B', idade: 15 },
+    { nome: 'Michel', turma: 'A', idade: 13 },
+    { nome: 'Ana', turma: 'B', idade: 11 },
+    { nome: 'Bruno', turma: 'B', idade: 10 }
 ];
 
 function alunoMaisVelhoTurmaAda() {
   var maisVelho = null;
   for (var i = 0; i < alunos.length; i++) {
-      if (alunos[i].turma === 'Ada') {
+      if (alunos[i].turma === 'A') {
           if (maisVelho === null || alunos[i].idade > maisVelho.idade) {
               maisVelho = alunos[i];
           }
@@ -100,7 +100,7 @@ function mediaIdadeAlunos() {
 }
 
 var maisVelhoA = alunoMaisVelhoTurmaAda();
-console.log(`O aluno mais velho da turma Ada é ${maisVelhoA.nome}  com ${maisVelhoA.idade}  anos.`);
+console.log(`O aluno mais velho da turma A é ${maisVelhoA.nome}  com ${maisVelhoA.idade}  anos.`);
 
 var mediaIdade = mediaIdadeAlunos();
 console.log(`A média de idade de todos os alunos é  ${mediaIdade} anos.`);
